@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "../../../../data/project";
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.slug === params.id);
+export default async function ProjectDetail({ params }: { params: { id: string } }) {
+  const { id } = await params;
+  const project = projects.find(p => p.slug === id);
 
   if (!project) {
     notFound();
@@ -87,9 +88,10 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 }
 
 // Generate metadata for SEO
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.slug === params.id);
-  
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const { id } = await params;
+  const project = projects.find(p => p.slug === id);
+
   if (!project) {
     return {
       title: 'Projet non trouvé'
