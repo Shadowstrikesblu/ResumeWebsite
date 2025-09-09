@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Project {
   id: number;
@@ -8,6 +9,10 @@ interface Project {
   technologies: string[];
   link: string;
   category: string;
+  slug?: string;
+  github?: string;
+  live?: string;
+  features?: string[];
 }
 
 interface ProjectsSectionProps {
@@ -54,15 +59,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
         
-        <a
-          href={project.link}
+        <Link
+          href={`/Dashboard/projects/${project.slug}`}
           className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
         >
-          Voir plus
+          Voir le projet
           <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );

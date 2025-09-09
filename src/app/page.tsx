@@ -2,42 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectsSection } from "@/components/Card";
 import SkillsBubble from "@/components/Skillsbubble";
+import { features } from "process";
+import { projects } from "../data/project";
 
 export default function Home() {
   // Project data - you can add more projects here
-  const projects = [
-    {
-      id: 1,
-      title: "Apprentissage d'outils de modélisation 3D",
-      description: "Utilisation de Blender et autres logiciels pour créer des modèles 3D complexes et réalistes.",
-      image: "/donut.png",
-      technologies: ["Blender", "Da Vinci Resolve"],
-      link: "#",
-      category: "Blender"
-    },
-    {
-      id: 2,
-      title: "Edition de vidéos Youtube",
-      description: "Utilisation de logiciels de montage vidéo pour créer et éditer des vidéos de haute qualité.",
-      image: "/pipstrike.png",
-      technologies: ["Da Vinci Resolve"],
-      link: "#",
-      category: "Montage Vidéo"
-    },
-    {
-      id: 3,
-      title: "Sites Web réalisés pour des projets personnels et clients",
-      description: "Création de sites web sur mesure pour divers clients, en mettant l'accent sur l'expérience utilisateur et le design.",
-      image: "/git.png", 
-      technologies: ["React", "Express", "PostgreSQL"],
-      link: "#",
-      category: "Web Development"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-      {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
