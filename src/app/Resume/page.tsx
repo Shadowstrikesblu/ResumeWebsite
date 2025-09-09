@@ -231,7 +231,7 @@ export default function ResumePage() {
           {/* Projects Section */}
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
-              Featured Projects
+              Projets Personnels
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -258,7 +258,7 @@ export default function ResumePage() {
         {/* Footer */}
         <div className="bg-gray-50 px-8 py-6 text-center">
           <p className="text-gray-600">
-            Download PDF version: 
+            Télécharger la version PDF :
             <a href="#" className="text-blue-600 hover:text-blue-800 ml-2 font-medium">
               resume.pdf
             </a>
