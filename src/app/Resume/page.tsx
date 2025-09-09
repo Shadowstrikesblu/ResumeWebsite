@@ -26,8 +26,33 @@ const SKILLS = {
     'Inventif', 'Travail en équipe', 
     'Design Pattern', 'Connaissances en Cybersécurité'],
 };
-
-// Work Experience Data
+const Education = [{
+  degree: 'Master 2 CYBER',
+  institution: 'Campus Euratechnologies',
+  period: '2023 - 2025',
+  content: ['Création d\'applications mobiles avec Expo Go et Android Studio, Développement web avec React et Node.js',
+            'Formation en cybersécurité et protection des données',
+            'Projet de fin d\'études: Mémoire sur l\'utilisation des données personnelles dans les publicités et jeu vidéo réalisé avec Unity',
+            'Expérience en Ethical Hacking à l\'aide des plateformes Cisco et Tryhackme',]
+},
+{
+  degree: 'Licence de sciences du numérique',
+  institution: 'Institut Catholique de Lille',
+  period: '2019 - 2022',
+  content: ['Développement web full-stack avec HTML, CSS, JavaScript, PHP, MySQL',
+            'Introduction aux algorithmes et structures de données',
+            'Projets pratiques incluant la création de sites web et d\'applications simples',
+            'Travail en équipe sur des projets de développement logiciel',
+  ]
+},
+{
+  degree: 'Baccalauréat Scientifique',
+  institution: 'Lycée Dominique Savio',
+  period: '2016 - 2019',
+  content: ['Section européenne', 'Mention Assez Bien', 'Spécialité Mathématiques', 'Informatique et Création Numérique',
+  ]
+}
+];
 const WORK_EXPERIENCE = [
   {
     title: 'Consultant développeur junior',
@@ -184,13 +209,22 @@ export default function ResumePage() {
             <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
               Education
             </h2>
-            <div className="border-l-4 border-blue-500 pl-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
-                <span className="text-gray-600 font-medium">2015 - 2019</span>
-              </div>
-              <p className="text-blue-600 font-medium">University Name</p>
-              <p className="text-gray-600">Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems</p>
+            
+            <div className="space-y-6">
+              {Education.map((edu, index) => (
+                <div key={index} className="border-l-4 border-blue-500 pl-6">
+                  <div className="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 className="text-xl font-semibold text-gray-800">{edu.degree}</h3>
+                    <span className="text-gray-600 font-medium">{edu.period}</span>
+                  </div>
+                  <p className="text-blue-600 font-medium mb-3">{edu.institution}</p>
+                  <ul className="text-gray-600 space-y-1 list-disc list-inside">
+                    {edu.content.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </section>
 
