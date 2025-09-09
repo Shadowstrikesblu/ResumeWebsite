@@ -28,10 +28,10 @@ export default function Home() {
       id: 3,
       title: "Sites Web réalisés pour des projets personnels et clients",
       description: "Création de sites web sur mesure pour divers clients, en mettant l'accent sur l'expérience utilisateur et le design.",
-      image: "/profile.jpg", // Placeholder - add your actual project image
+      image: "/git.png", 
       technologies: ["React", "Express", "PostgreSQL"],
       link: "#",
-      category: "E-commerce"
+      category: "Web Development"
     }
   ];
 
