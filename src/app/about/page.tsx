@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import MonParcours from './monparcours';
+import SectionDeux from './sectiondeux';
+import { ABOUT_TEXTS } from '../../data/texts';
 
 export default function AboutPage() {
   return (
@@ -6,23 +9,19 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="px-8 py-12">
-            <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">A propos de moi </h1>
+            <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">A propos de moi</h1>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">Salut, je suis Harvey!</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Je suis un développeur Full Stack passionné, aimant créer des applications web innovantes.
-                  Mon parcours dans la technologie a commencé il y a plusieurs années, et j'ai continuellement appris
-                  et évolué depuis.
+                  {ABOUT_TEXTS.description}
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Je me spécialise dans les technologies web modernes, y compris React, Next.js, Node.js et TypeScript.
-                  J'aime relever des défis complexes et transformer des idées en réalité grâce à un code propre et efficace.
+                  {ABOUT_TEXTS.skills}
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Quand je ne code pas, vous pouvez me trouver en train d'explorer de nouvelles technologies, de lire des livres
-                  ou de lire les dernières actualités sur le développement web.
+                  {ABOUT_TEXTS.hobbies}
                 </p>
               </div>
               
@@ -37,12 +36,16 @@ export default function AboutPage() {
                     priority
                   />
                 </div>
-                }              
+                }      
                 <p className="mt-4 text-gray-600 italic">
-                  "L'aimer toujours même s'il n'est plus ici"
+                  "{ABOUT_TEXTS.quote}"
                 </p>
               </div>
             </div>
+            
+            {/* Section Mon Parcours */}
+            <MonParcours />
+            <SectionDeux />
           </div>
         </div>
       </div>

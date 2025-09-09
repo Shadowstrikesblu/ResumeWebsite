@@ -11,7 +11,7 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Me contacter</h1>
           <p className="text-xl text-gray-600">
-            Il fallait une page de contact pour transformer ce template en portfolio non ?
+            Il fallait une page de contact pour transformer ce site en portfolio classique non ?
           </p>
         </div>
 
