@@ -92,7 +92,7 @@ export const PROJECTS = [
     name: 'Site Portfolio',
     description: 'Site qui présente mes compétences, expériences et projets réalisés',
     technologies: ['React', 'Node.js'],
-    link: '#',
+    link: '/',
   },
   {
     name: 'Personal Github',
