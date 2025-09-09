@@ -56,10 +56,8 @@ export default async function ProjectDetail({ params }: { params: { id: string }
             <p className="text-lg text-gray-600 mb-8">
               {project.fullDescription}
             </p>
-
-            {/* Technologies */}
             <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4">Technologies utilisées</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Technologies utilisées</h3>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <span key={tech} className="bg-gray-100 text-gray-800 px-3 py-1 rounded-md">
@@ -69,10 +67,9 @@ export default async function ProjectDetail({ params }: { params: { id: string }
               </div>
             </div>
 
-            {/* Features */}
             {project.features && (
               <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-4">Fonctionnalités principales</h3>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">Fonctionnalités principales</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-600">
                   {project.features.map((feature, index) => (
                     <li key={index}>{feature}</li>

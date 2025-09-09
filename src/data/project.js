@@ -11,7 +11,7 @@ export const projects = [
       category: "Blender",
       github: "",
       live: "",
-      fullDescription:"Hey",
+      fullDescription:"J'ai commencé à apprendre la modélisation 3D avec Blender car je voulais avoir la liberté de créer mes propres assets 3D pour mes projets personnels. Blender est un outil puissant et open-source qui permet de réaliser des modèles, des animations et des rendus de haute qualité. J'ai suivi plusieurs tutoriels en ligne et pratiqué régulièrement pour améliorer mes compétences. J'ai également exploré d'autres logiciels de modélisation 3D pour diversifier mes connaissances et techniques.",
     },
     {
       id: 2,
@@ -22,10 +22,10 @@ export const projects = [
       technologies: ["Da Vinci Resolve"],
       link: "#",
       category: "Montage Vidéo",
-      features: ["Montage", "Color Grading", "Effets Visuels"],
+      features: ["Montage", "Commentary", "Effets Visuels"],
       github: "",
       live: "",
-      fullDescription:"Hey",
+      fullDescription:"Ce qui a commencé comme un projet d'école est vite devenu un hobby que j'avais en lors de mon master. D'abord avec un camarade de classe, j'ai continué à alimenter la chaine Youtube moi-même. J'utilise principalement Da Vinci Resolve pour le montage vidéo, car il offre une gamme complète d'outils professionnels tout en restant accessible aux débutants. J'ai appris à utiliser les fonctionnalités de base telles que le découpage, l'ajout de transitions , ainsi que des techniques plus avancées comme les effets visuels et le mixage audio. ",
     },
     {
       id: 3,
@@ -33,12 +33,12 @@ export const projects = [
       slug : "sites-web-personnels-clients",
       description: "Création de sites web sur mesure pour divers clients, en mettant l'accent sur l'expérience utilisateur et le design.",
       image: "/git.png", 
-      technologies: ["React", "Express", "PostgreSQL"],
+      technologies: ["React", "Vue", "Python","Next.js"],
       link: "#",
       category: "Web Development",
-      features: ["Responsive Design", "SEO Optimization", "E-commerce Integration"],
+      features: ["Showcase de mon travail", "Tracking de code", "Collaboration avec d'autres développeurs"],
       github: "",
       live: "",
-      fullDescription:"Hey",
+      fullDescription:"Ceci est mon GitHub, vous y trouverez plusieurs de mes projets personnels ainsi que des contributions à des projets open source. Je mets régulièrement à jour mon profil donc n'hésitez pas à y jeter un coup d'œil",
     }
   ];

@@ -10,6 +10,8 @@ export default function ContactForm() {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const handleChange = (e) => {
     setFormData({
       ...formData,
